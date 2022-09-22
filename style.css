@@ -9,6 +9,9 @@
     padding: 8px;
     width: 100vw;
     height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
 }
 
 .cabecalho {
@@ -17,6 +20,7 @@
     min-width: 50px;
     min-height: 50px;
     margin: 8px;
+    grid-column: span 4;
 }
 
 .lateral {
@@ -25,6 +29,7 @@
     min-width: 50px;
     min-height: 50px;
     margin: 8px;
+    grid-row: span 3;
 }
 
 .meio {
@@ -33,6 +38,8 @@
     min-width: 50px;
     min-height: 50px;
     margin: 8px;
+    grid-column: span 2;
+    grid-row: span 3;
 }
 
 .direita-cima {
@@ -49,4 +56,5 @@
     min-width: 50px;
     min-height: 50px;
     margin: 8px;
+    grid-row: span 2;
 }
